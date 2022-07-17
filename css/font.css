@@ -1,8 +1,8 @@
 @font-face {
     font-family: "FuturaNew";
-    src: url("../assets/fonts/FuturaNewBold-Reg.ttf") format("ttf"),
-         url("../assets/fonts/FuturaNewBold-Reg.woff") format("woff"),
-         url("../assets/fonts/FuturaNewBold-Reg.woff2") format("woff2");
+    src: url("../assets/fonts/FuturaNewBook-Reg.ttf") format("ttf"),
+         url("../assets/fonts/FuturaNewBook-Reg.woff") format("woff"),
+         url("../assets/fonts/FuturaNewBook-Reg.woff2") format("woff2");
 }
 
 @font-face {

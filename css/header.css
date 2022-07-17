@@ -1,0 +1,66 @@
+.header {
+    padding-top: 84px;
+    padding-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    display: block;
+    width: 79px;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.menu {
+    width: 52.33%;
+    min-width: 560px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.menu-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #C3B9B5;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.menu-item a {
+    color: #C3B9B5;
+    text-decoration: none;
+}
+
+.city {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #FFC59E;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.city::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 29px;
+    margin-right: 19px;
+    background-image: url("../assets/img/map.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

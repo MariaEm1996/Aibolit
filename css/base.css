@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "FuturaNew", sans-serif;
+    font-size: 20px;
+}
+
+.pl-1 {
+    padding-left: 80px;
+}
+
+.pr-1 {
+    padding-right: 80px;
+}
+
