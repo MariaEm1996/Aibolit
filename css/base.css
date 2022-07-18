@@ -16,3 +16,39 @@ body {
     padding-right: 80px;
 }
 
+@media (max-width: 1024px) {
+    .popup {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #FFF;
+        transform: translateY(-110vh);
+        transition: all 0.5s ease;
+    }
+
+    .popup--visible {
+        transform: translateY(0);
+        transition: all 0.5s ease;
+    }
+}
+
+.close-popup {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../assets/img/close.svg");
+    background-color: #FFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}

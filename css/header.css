@@ -11,6 +11,7 @@
 .logo {
     display: block;
     width: 79px;
+    min-width: 59px;
 }
 
 .logo-img {
@@ -63,4 +64,20 @@
     background-image: url("../assets/img/map.svg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+    .menu-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin-top: 10px;
+    }
+
+    .menu-item:first-child {
+        margin-top: 0;
+    }
 }
