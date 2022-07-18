@@ -17,6 +17,7 @@ body {
 }
 
 @media (max-width: 1024px) {
+
     .popup {
         position: relative;
         display: flex;
@@ -51,4 +52,15 @@ body {
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+    .pl-1 {
+        padding-left: 10px;
+    }
+    
+    .pr-1 {
+        padding-right: 10px;
+    }
 }
