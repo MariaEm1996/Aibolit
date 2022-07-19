@@ -6,6 +6,11 @@
 body {
     font-family: "FuturaNew", sans-serif;
     font-size: 20px;
+    background-color: #FFFEFE;
+}
+
+main {
+    margin-top: 90px;
 }
 
 .pl-1 {
@@ -55,7 +60,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    
+
     .pl-1 {
         padding-left: 10px;
     }
