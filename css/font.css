@@ -12,3 +12,20 @@
          url("../assets/fonts/FuturaNewBold-Reg.woff") format("woff"),
          url("../assets/fonts/FuturaNewBold-Reg.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "SchoolBook";
+    src: url("../assets/fonts/schoolbook-cyrillic.ttf") format("ttf"),
+         url("../assets/fonts/schoolbook-cyrillic.woff") format("woff"),
+         url("../assets/fonts/schoolbook-cyrillic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SchoolBook";
+    font-weight: bold;
+    src: url("../assets/fonts/schoolbook-bold-cyrillic.ttf") format("ttf"),
+         url("../assets/fonts/schoolbook-bold-cyrillic.woff") format("woff"),
+         url("../assets/fonts/schoolbook-bold-cyrillic.woff2") format("woff2");
+}
+
+

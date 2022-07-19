@@ -1,6 +1,9 @@
 .main-slider {
     max-width: 1920px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .toggler {
@@ -30,4 +33,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     color: #080606;
+}
+
+.slide-text {
+    max-width: 645px;
+    font-family: "SchoolBook", serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    color: #080606;
+}
+
+.slide-btn {
+    margin-top: 50px;
 }

@@ -69,3 +69,26 @@ main {
         padding-right: 10px;
     }
 }
+
+.main-btn {
+    box-sizing: border-box;
+    background-color: #FFC59E;
+    box-shadow: 0px 4px 20px #FFC59E;
+    border-radius: 34px;
+    border: none;
+    padding: 24px 77px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main-btn:hover {
+    color: #FFF;
+    background-color: #59443F;
+    box-shadow: none;
+    transition: all 0.5s ease;
+}
