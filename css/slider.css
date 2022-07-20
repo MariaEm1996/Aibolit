@@ -44,6 +44,48 @@
     padding-bottom: 80px;
 }
 
+.slide-1 {
+    background-image: url("../assets/img/slides/image-1.png");
+    background-size: 64.42% auto;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.slide-2 {
+    background-image: url("../assets/img/slides/image-2.png");
+    background-size: 61.42% auto;
+    background-repeat: no-repeat;
+    background-position: 75% bottom;
+}
+
+.slide-3 {
+    background-image: url("../assets/img/slides/image-3.png");
+    background-size: 44.42% auto;
+    background-repeat: no-repeat;
+    background-position: 85% bottom;
+}
+
+.slide-4 {
+    background-image: url("../assets/img/slides/image-4.png");
+    background-size: 62.42% auto;
+    background-repeat: no-repeat;
+    background-position: 85% -13%;
+}
+
+.slide-5 {
+    background-image: url("../assets/img/slides/image-5.png");
+    background-size: 66.42% auto;
+    background-repeat: no-repeat;
+    background-position: 112% bottom;
+}
+
+.slide-6 {
+    background-image: url("../assets/img/slides/image-6.png");
+    background-size: 64.42% auto;
+    background-repeat: no-repeat;
+    background-position: 103% 55%;
+}
+
 .slide-text {
     max-width: 645px;
     font-family: "SchoolBook", serif;
@@ -51,6 +93,10 @@
     font-weight: 400;
     line-height: 5.5rem;
     color: #080606;
+}
+
+.slide-text--big {
+    max-width: 755px;
 }
 
 .slide-btn {
