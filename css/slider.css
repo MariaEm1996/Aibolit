@@ -23,6 +23,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 .toggle:first-child {
@@ -38,10 +39,18 @@
 
 .slide-viewport {
     width: 78.39%;
+    overflow: hidden;
+}
+
+.slide-viewport-content {
+    transition: all 0.5s ease;
 }
 
 .slide {
     padding-bottom: 80px;
+    max-height: 100%;
+    overflow: hidden;
+    padding-left: 18px;
 }
 
 .slide-1 {
