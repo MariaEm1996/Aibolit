@@ -156,8 +156,7 @@
     }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 767px) {
     .city::before {
         width: 15px;
         height: 22px;

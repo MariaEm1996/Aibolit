@@ -21,30 +21,6 @@ main {
     padding-right: 80px;
 }
 
-@media (max-width: 1024px) {
-
-    .popup {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        background-color: #FFF;
-        transform: translateY(-110vh);
-        transition: all 0.5s ease;
-    }
-
-    .popup--visible {
-        transform: translateY(0);
-        transition: all 0.5s ease;
-    }
-}
-
 .close-popup {
     position: absolute;
     top: 26px;
@@ -57,17 +33,6 @@ main {
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-
-    .pl-1 {
-        padding-left: 10px;
-    }
-    
-    .pr-1 {
-        padding-right: 10px;
-    }
 }
 
 .main-btn {
@@ -91,4 +56,52 @@ main {
     background-color: #59443F;
     box-shadow: none;
     transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .pl-1 {
+        padding-left: 10px;
+    }
+    
+    .pr-1 {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .popup {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #FFF;
+        transform: translateY(-110vh);
+        transition: all 0.5s ease;
+    }
+
+    .popup--visible {
+        transform: translateY(0);
+        transition: all 0.5s ease;
+    }
 }
