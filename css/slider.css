@@ -47,53 +47,54 @@
 }
 
 .slide {
+    position: relative;
     box-sizing: border-box;
-    padding-bottom: 80px;
+    padding-left: 18px;
+    padding-bottom: 317px;
     max-height: 100%;
     overflow: hidden;
-    padding-left: 18px;
 }
 
 .slide-1 {
     background-image: url("../assets/img/slides/image-1.png");
-    background-size: 64.42% auto;
+    background-size: 44.42% auto;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
 
 .slide-2 {
     background-image: url("../assets/img/slides/image-2.png");
-    background-size: 61.42% auto;
+    background-size: 43.42% auto;
     background-repeat: no-repeat;
     background-position: 75% bottom;
 }
 
 .slide-3 {
     background-image: url("../assets/img/slides/image-3.png");
-    background-size: 44.42% auto;
+    background-size: 30.42% auto;
     background-repeat: no-repeat;
     background-position: 85% bottom;
 }
 
 .slide-4 {
     background-image: url("../assets/img/slides/image-4.png");
-    background-size: 62.42% auto;
+    background-size: 52.42% auto;
     background-repeat: no-repeat;
-    background-position: 85% -13%;
+    background-position: 85% bottom;
 }
 
 .slide-5 {
     background-image: url("../assets/img/slides/image-5.png");
-    background-size: 66.42% auto;
+    background-size: 46.42% auto;
     background-repeat: no-repeat;
-    background-position: 112% bottom;
+    background-position: 80% bottom;
 }
 
 .slide-6 {
     background-image: url("../assets/img/slides/image-6.png");
-    background-size: 64.42% auto;
+    background-size: 48.42% auto;
     background-repeat: no-repeat;
-    background-position: 103% 55%;
+    background-position: 98% 29%;
 }
 
 .slide-text {
@@ -114,12 +115,16 @@
 }
 
 .slide-contacts {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 197px;
     padding-right: 80px;
 }
 
@@ -184,7 +189,7 @@
     }
 
     .slide {
-        padding-bottom: 20px;
+        padding-bottom: 240px;
         padding-right: 18px;
     }
 
@@ -222,8 +227,8 @@
 
     .slide-contacts {
         flex-direction: column;
-        margin-top: 60px;
         padding-right: 0;
+        bottom: 20px;
     }
 
     .slide-phone {
@@ -232,9 +237,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .slide {
+        padding-bottom: 360px;
+    }
+
+    .slide-text,
     .slide-text--big {
         max-width: 495px;
         font-size: 3rem;
+        line-height: 3.5rem;
     }
 
     .slide-4 {
@@ -244,5 +255,9 @@
     .slide-6 {
         background-size: 61.42% auto;
         background-position: 103% 74%;
+    }
+
+    .slide-contacts {
+        bottom: 30px;
     }
 }

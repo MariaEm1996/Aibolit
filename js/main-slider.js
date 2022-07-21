@@ -5,17 +5,7 @@ const getSliderElements = (element) => ({
     viewportContent: document.querySelector('.slide-viewport-content'),
 });
 
-const getMaxHeight = (slides) => Math.min(...slides.map(slide => {
-    const style = getComputedStyle(slide);
-
-    const height = parseInt(style.height);
-    const paddingTop = parseInt(style.paddingTop);
-    const paddingBottom = parseInt(style.paddingBottom);
-    const borderTop = parseInt(style.borderTop);
-    const borderBottom = parseInt(style.borderBottom);
-
-    return height + paddingTop + paddingBottom + borderTop + borderBottom;
-}));
+const getMaxHeight = (slides) => Math.min(...slides.map(slide => slide.offsetHeight));
 
 const sizeViewport = (viewport, height) => {
     if (!viewport || !(height ?? false)) {
@@ -68,6 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let autoscrollIntervalId = null;
 
     const switchSlide = (toggler, index, slideHeight, viewportContent) => {
+        if (activeSlideIndex === index) {
+            return;
+        }
+
         goToSlide(toggler, index, slideHeight, viewportContent);
         deactivateToggle(activeToggler);
         activeToggler = toggler;
@@ -89,9 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
         toggler.addEventListener('click', () => {
             offAutoscroll();
             switchSlide(toggler, index, slideHeight, viewportContent);
-            // autoscrollIntervalId = setAutoscroll();
+            autoscrollIntervalId = setAutoscroll();
         });
     });
 
-    // autoscrollIntervalId = setAutoscroll();
+    autoscrollIntervalId = setAutoscroll();
 });
