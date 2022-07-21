@@ -47,6 +47,7 @@
 }
 
 .slide {
+    box-sizing: border-box;
     padding-bottom: 80px;
     max-height: 100%;
     overflow: hidden;
@@ -174,6 +175,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: center;
         margin-top: 6px;
     }
 
@@ -183,6 +185,7 @@
 
     .slide {
         padding-bottom: 20px;
+        padding-right: 18px;
     }
 
     .slide-1,
@@ -197,14 +200,24 @@
     .slide-text {
         font-size: 2rem;
         line-height: 3.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .slide-text--big {
-        font-size: 1.5rem;
+        font-size: 4vmax;
+    }
+
+    .slide-text--big br {
+        display: none;
     }
 
     .slide-btn {
+        display: block;
         margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .slide-contacts {
