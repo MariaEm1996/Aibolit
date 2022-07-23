@@ -21,6 +21,14 @@ main {
     padding-right: 80px;
 }
 
+.pl-2 {
+    padding-left: 284px;
+}
+
+.pr-2 {
+    padding-right: 284px;
+}
+
 .close-popup {
     position: absolute;
     top: 26px;
