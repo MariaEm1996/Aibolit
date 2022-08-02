@@ -58,3 +58,16 @@
 .service-kind:hover .service-kind-img {
     filter: invert(26%) sepia(11%) saturate(977%) hue-rotate(324deg) brightness(96%) contrast(88%);
 }
+
+@media (max-width: 767px) {
+    .service {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .service-kind {
+        flex-basis: 320px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
