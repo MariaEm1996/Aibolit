@@ -1,0 +1,94 @@
+.contacts {
+    margin-top: 150px;
+    padding-left: 11.98%;
+    padding-right: 11.98%;
+}
+
+.contacts-info {
+    max-width: 1460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.contacts-title {
+    font-family: "SchoolBook", serif;
+    font-size: 2rem;
+    line-height: 40px;
+    color: #080606;
+}
+
+.contacts-info-address {
+    width: 33.15%;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact:first-child {
+    margin-top: 0;
+}
+
+.contact p,
+.contact a {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 66px;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #59443F;
+}
+
+.contact p:first-child,
+.contact a:first-child {
+    margin-top: 20px;
+}
+
+.contact p::before,
+.contact a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.contact-namme {
+    font-family: "SchoolBook", serif;
+    font-size: 1.5rem;
+    line-height: 40px;
+    color: #080606;
+}
+
+.contact-address::before {
+    background-image: url("../assets/img/map.svg");
+    background-size: 25px 30px;
+}
+
+.contact-phone {
+    display: block;
+    text-decoration: none;
+}
+
+a.contact-phone::before {
+    background-image: url("../assets/img/phone.svg");
+    background-size: 25px 25px;
+    background-position: top center;
+}
+
+p.contact-time::before {
+    background-image: url("../assets/img/clock.svg");
+    background-size: 25px 25px;
+    background-position: top center;
+}
+
+.contacts-map {
+    width: 66.07%;
+    max-width: 950px;
+}
