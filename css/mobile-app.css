@@ -1,0 +1,50 @@
+.mobile-app {
+    margin-top: 150px;
+    padding-top: 10.63%;
+    padding-left: 11.98%;
+    padding-bottom: 6.04%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFC59E;
+}
+
+.mobile-app-description {
+    width: 43.02%;
+}
+
+.mobile-app-title {
+    font-family: "SchoolBook", serif;
+    font-size: 4rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 110px;
+}
+
+.mobile-app-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+}
+
+.mobile-app-link {
+    display: block;
+    width: 167px;
+    height: 49px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.app-ios {
+    background-image: url("../assets/img/appstore.svg");
+}
+
+.app-google {
+    background-image: url("../assets/img/google-play.svg");
+}
+
+.mobile-app-img {
+    width: 37.71%;
+    max-width: 764px;
+    margin-left: 64px;
+}

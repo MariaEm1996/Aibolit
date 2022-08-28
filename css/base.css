@@ -3,9 +3,12 @@
     padding: 0;
 }
 
+html {
+    font-size: 20px;
+}
+
 body {
     font-family: "FuturaNew", sans-serif;
-    font-size: 20px;
     background-color: #FFFEFE;
 }
 
@@ -67,7 +70,7 @@ main {
 }
 
 @media (max-width: 767px) {
-    body {
+    html {
         font-size: 14px;
     }
 
@@ -85,7 +88,7 @@ main {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    body {
+    html {
         font-size: 16px;
     }
 }
