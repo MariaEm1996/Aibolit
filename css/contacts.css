@@ -92,3 +92,37 @@ p.contact-time::before {
     width: 66.07%;
     max-width: 950px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contacts-info {
+        flex-direction: column;
+    }
+
+    .contacts-info-address {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact {
+        margin-top: 0;
+    }
+
+    .contacts-map {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contacts-info-address {
+        width: 100%;
+    }
+
+    .contacts-map {
+        display: none;
+    }
+}
