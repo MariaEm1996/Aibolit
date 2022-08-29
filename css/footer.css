@@ -1,0 +1,128 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4.17% 11.98%;
+    background-color: #59443F;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-logo-img {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-logo-text {
+    margin-left: 22px;
+}
+
+.footer-logo-title {
+    font-family: "SchoolBook", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.footer-logo-description {
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+.footer-apps {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-app {
+    display: block;
+    width: 140px;
+    height: 41px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-ios {
+    background-image: url("../assets/img/appstore.svg");
+}
+
+.footer-google {
+    background-image: url("../assets/img/google-play.svg");
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.footer-social {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-social:first-child {
+    margin-left: 0;
+}
+
+.footer-vk {
+background-image: url("../assets/img/footer_vk.svg");
+}
+
+.footer-youtube {
+    background-image: url("../assets/img/footer-youtube.svg");
+}
+
+.footer-contact {
+    display: block;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.footer-contact:first-of-type {
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-logo-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer-logo-text {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-apps {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .footer-google {
+        margin-top: 10px;
+    }
+}
